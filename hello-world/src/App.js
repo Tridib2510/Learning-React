@@ -1,23 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Greet from './components/Greet'
+//import {Greet} from './components/Greet' //This should be used for named exports
 function App() {
   return (
+    //To include Greet component in App component we simply specify the component as the custom html tag
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Greet />
     </div>
   );
 }
